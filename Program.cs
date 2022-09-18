@@ -4,21 +4,29 @@
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
 string[] Array1;
+string[] Array2;
+
 Array1 = new string[] {"danmark", "rz", "2", "500", "moscow"};
+Array2 = new string[5];
 
-for (int i = 0; i < Array1.Length; i++)
-    {
-        Console.Write(Array1[i]+ " ");
-
-    }
-    Console.WriteLine();
 for (int i = 0; i < Array1.Length; i++)
 {
+    Console.Write(Array1[i]+ " ");
+}
+Console.WriteLine();
+
+int j=0;
+for (int i = 0; i < Array1.Length; i++)
+{
+    
     if (Array1[i].Length < 3)
     {
-        Console.WriteLine(Array1[i]);
+         Array2[j] = Array1[i];
+        
+         Console.Write(Array2[j]+ " ");
+        j++;
     }
-    
+
 }
 
     
